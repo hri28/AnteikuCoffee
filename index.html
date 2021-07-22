@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>anteiku coffee</title>
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./masterhome.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+        <div class="wrapper">
+            <nav class="top">
+                <form id="frmsearch">
+                    <input type="search" id="searchbar" onkeyup="search()">
+                    <i class="fa fa-search"></i>
+                    <ol id='list'> 
+                        <a href="./index.html"><li class="pages">Home</li></a> 
+                        <a href="./About us.html"><li class="pages">About Us</li></a> 
+                        <a href="./Contact Us.html"><li class="pages">Contact Us</li> </a>
+                        <a href="./explore.html"><li class="pages">Explore</li></a> 
+                        <a href="./About us.html">><li class="pages">Our Story</li> </a>
+                        <a href="./Feedback form.html"><li class="pages">Feedback Form</li> </a>
+                        <a href="./menu.html"><li class="pages">Menu</li> </a>
+                        <a href="./Recipes.html"><li class="pages">Recipes</li></a> 
+                        <a href="./Loginform.html"><li class="pages">Login</li> </a>
+                        <a href="./SignupForm.html"><li class="pages">Sign Up</li> </a>
+                        <a href="./gallery.html"><li class="pages">Gallery</li>  </a>   
+                    </ol>
+                  </form>
+                <a href="./Loginform.html" class="but">LOGIN</a>
+            </nav>
+        
+       <div class="a1">
+            <img src="Untitled-2.png" alt="Anteiku Coffee" height="275px" width="300px" class="logo"> <!--logo-->
+            <br>
+            <nav class="head">
+                <br>
+            <ul>
+                <li class="menu"><a href="./menu.html">Menu</a></li> <!--links to respective pages-->
+                <li class="menu"><a href="About us.html">About</a></li>
+                <li class="menu"><a href="./Contact Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+          </div>
+          </div>
+           
+        </div>      
+        <br><br>
+        <div class="a2">
+            <img src="coffeecup.jpg" height="500px" width="320px" class="c">
+            <br>
+           <strong><p class="h">Let's get brewing!</p></strong>
+           <p class="y">Learn more about our wide range of<br>
+               coffees along with other beverages and desserts.</p>
+               <nav>
+               <ul>
+                   <li class="explore"><a href="./explore.html">Explore</a></li> <!--link to explore web page-->
+               </ul>
+               </nav>         
+        </div>
+        <div class="a5">
+            <img src="dessert.jpg" height="500px" width="500px" class="d">
+            <br>
+            <strong><p class="f">About us</p></strong>
+            <p class="g">Everything about Anteiku Coffee and it's philosophy.</p>
+            <nav>
+                <ul>
+                    <li class="about"><a href="./About us.html">Our Story</a></li><!--link to about us web page-->
+                </ul>
+            </nav>
+        </div>
+        </main>
+
+        <div class = "carousel"> <!--carousel slider-->
+            <button class= "carousel_button carousel_button--left">
+                <img src="back.png" alt="left">
+            </button>
+            <div class="carousel_track-container">
+                <ul class="carousel_track">
+                    <li class="carousel_slide current-slide">
+                        <img class="carousel_image" src="c1.jpg" alt="carouselimg1">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="c2.jpg" alt="carouselimg2">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="c3.jpg" alt="carouselimg3">
+                    </li>
+                </ul>
+            </div>
+            <button class= "carousel_button carousel_button--right"><img src="next.png" alt="right"></button>
+            <div class = "carousel_nav"> <!--the navigation circles-->
+                <button class="carousel_indicator current-slide"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+            </div>
+        </div>
+        <footer>
+            <div class="a3">
+                <ul class="unstyled-list">
+                    <li><a href="About us.html">About</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./Feedback form.html">Customer Service</a></li>
+                </ul>              
+            </div>
+        </footer>
+        </div>
+        
+        <script src="./carousel.js"></script>
+        <script>
+        function search() { 
+            let input = document.getElementById('searchbar').value 
+            input=input.toLowerCase(); 
+            let x = document.getElementsByClassName('pages'); 
+              
+            for (i = 0; i < x.length; i++) {  
+                if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+                    x[i].style.display="none"; 
+                } 
+                else { 
+                    x[i].style.display="list-item";                  
+                } 
+            } 
+        }
+    </script>
+
+    </body>
+</html>

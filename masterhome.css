@@ -1,0 +1,45 @@
+.a1{
+    animation: transitionIn 1.5s;
+}
+.a2{
+    animation: transitionIn 2.0s;
+}
+.a5{
+    animation: transitionIn 3.5s;
+}
+.a3{
+    animation: transitionIn 2.0s;
+}
+.head{
+    animation: transitionIn 2.0s;
+}
+.slider{
+    animation: transition 0.5s;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+        transition-timing-function: ease-in;
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+        transition-timing-function: ease-in;
+    }
+}
+@keyframes transition {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+        transition-timing-function: ease-in;
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+        transition-timing-function: ease-in;
+    }
+}
